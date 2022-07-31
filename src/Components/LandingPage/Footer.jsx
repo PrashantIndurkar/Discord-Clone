@@ -1,7 +1,7 @@
 import React from "react";
-import usaFlag from "../assets/images/nation.png";
+import usaFlag from "../../assets/images/nation.png";
 import { ChevronDownIcon } from "@heroicons/react/outline";
-import logo from "../assets/images/Discord-Logo.svg";
+import logo from "../../assets/images/Discord-Logo.svg";
 
 import { BsTwitter, BsFacebook, BsInstagram, BsYoutube } from "react-icons/bs";
 

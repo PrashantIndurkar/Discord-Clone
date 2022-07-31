@@ -3,13 +3,13 @@ import SectionContent from "./SectionContent";
 
 import { DownloadIcon } from "@heroicons/react/outline";
 
-import landingImg1 from "../assets/images/landingImg1.svg";
-import landingImg2 from "../assets/images/landingImg2.svg";
-import landingImg3 from "../assets/images/LandingImg3.svg";
+import landingImg1 from "../../assets/images/landingImg1.svg";
+import landingImg2 from "../../assets/images/landingImg2.svg";
+import landingImg3 from "../../assets/images/LandingImg3.svg";
 
-import landingImg4 from "../assets/images/LandingImg4.svg";
+import landingImg4 from "../../assets/images/LandingImg4.svg";
 
-import footerbg from "../assets/images/footerbg.svg";
+import footerbg from "../../assets/images/footerbg.svg";
 
 function Section() {
   return (

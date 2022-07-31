@@ -1,7 +1,7 @@
 import { DownloadIcon } from "@heroicons/react/outline";
 import React from "react";
 
-import foregroundLeft from "../assets/images/foregroundLeft.svg";
+import foregroundLeft from "../../assets/images/foregroundLeft.svg";
 
 function Header() {
   return (
@@ -10,7 +10,7 @@ function Header() {
         <h1 className="text-2xl font-black tracking-wider sm:text-4xl">
           IMAGINE A PLACE...
         </h1>
-        <p className="my-6 text-slate-100">
+        <p className="my-6 text-slate-100 leading-relaxed">
           ...where you can belong to a school club, a gaming group, or a
           worldwide art community. Where just you and a handful of friends can
           spend time together. A place that makes it easy to talk every day and
@@ -18,8 +18,7 @@ function Header() {
         </p>
         <div className="flex flex-col gap-6 items-start">
           <button className="hero_button bg-white  text-black">
-            <DownloadIcon className="h-5 w-5" />{" "}
-            <a href="">Download for Linux</a>
+            <DownloadIcon className="h-5 w-5" /> <a href="">Download</a>
           </button>
           <button className="hero_button text-white bg-black">
             <a href="">Open Discord in your browser</a>

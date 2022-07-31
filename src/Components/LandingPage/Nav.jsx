@@ -1,7 +1,7 @@
 import React from "react";
 import { MenuIcon } from "@heroicons/react/outline";
 
-import logo from "../assets/images/Discord-Logo.svg";
+import logo from "../../assets/images/Discord-Logo.svg";
 
 function Nav() {
   return (
