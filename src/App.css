@@ -30,6 +30,12 @@
 .App-link {
   color: #61dafb;
 }
+.footerBg {
+  background: url("/src/assets/images/footerbg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: -20px;
+}
 
 @keyframes App-logo-spin {
   from {

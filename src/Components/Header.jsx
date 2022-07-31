@@ -7,7 +7,7 @@ function Header() {
   return (
     <div className="bg-discord_blue text-white h-[90vh]">
       <div className="pt-16 px-6">
-        <h1 className="text-2xl font-black tracking-wider">
+        <h1 className="text-2xl font-black tracking-wider sm:text-4xl">
           IMAGINE A PLACE...
         </h1>
         <p className="my-6 text-slate-100">
