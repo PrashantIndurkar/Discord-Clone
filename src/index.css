@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .link {
+    @apply cursor-pointer font-semibold text-sm text-white hover:underline;
+  }
+  .hero_button{
+   @apply rounded-full focus:outline-none transition duration-200 ease-in-out font-normal flex items-center justify-center px-[2.2rem] py-[0.8rem] text-lg hover:shadow-2xl
+  }
+}
