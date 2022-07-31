@@ -12,12 +12,8 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-h1{
-  font-family: 'GintoNord';
-}
-@font-face {
-  font-family: 'GintoNord';
-  src: local('GintoNord'), url(/public/fonts/GintoNord.woff2.ttf) format('truetype');
+* {
+  font-family: "poppine";
 }
 
 .App-header {
