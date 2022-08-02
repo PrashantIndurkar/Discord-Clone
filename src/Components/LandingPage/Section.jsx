@@ -9,8 +9,6 @@ import landingImg3 from "../../assets/images/LandingImg3.svg";
 
 import landingImg4 from "../../assets/images/LandingImg4.svg";
 
-import footerbg from "../../assets/images/footerbg.svg";
-
 function Section() {
   return (
     <div>
@@ -38,9 +36,9 @@ function Section() {
           }
         />
       </div>
-      <div className="bg-[#f6f6f6] py-14">
-        <div className="mx-6 pt-14">
-          <h1 className="text-2xl sm:text-3xl font-black my-6 tracking-wide">
+      <div className="bg-[#f6f6f6] py-10 ">
+        <div className="mx-6 md:mx-10 pt-14">
+          <h1 className="text-2xl sm:text-3xl md:text-center overflow-hidden font-black mb-6 tracking-wide ">
             RELIABLE TECH FOR STAYING CLOSE
           </h1>
           <p className="text-zinc-600">
@@ -50,11 +48,11 @@ function Section() {
           </p>
           <img className="my-8" src={landingImg4} alt="" />
 
-          <div className="footerBg mx-6 pt-10">
-            <h1 className="text-3xl sm:text-4xl font-bold tracking-wide sm:text-center">
+          <div className="footerBg mx-6 md:mx-10 pt-10 my-10 md:text-center">
+            <h1 className="text-3xl sm:text-4xl overflow-hidden font-bold tracking-wide sm:text-center">
               Ready to start your journey?
             </h1>
-            <button className="hero_button bg-discord_purple mt-10 text-white">
+            <button className="hero_button bg-discord_purple mt-10 text-white mx-auto hover:bg-discord_blurple">
               <DownloadIcon className="h-5 w-5" />{" "}
               <a href="">Download for Linux</a>
             </button>

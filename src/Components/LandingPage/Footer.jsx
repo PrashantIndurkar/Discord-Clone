@@ -8,8 +8,8 @@ import { BsTwitter, BsFacebook, BsInstagram, BsYoutube } from "react-icons/bs";
 const Footer = () => {
   return (
     <footer className="bg-[#23272a] py-6 text-white">
-      <div className="mx-6">
-        <h1 className="text-discord_purple text-4xl font-black mt-14">
+      <div className="mx-6 md:mx-10">
+        <h1 className="text-discord_purple overflow-hidden text-4xl font-black mt-14">
           IMAGINE A PLACE
         </h1>
         <div className="my-6 flex gap-3 align-middle items-center">
