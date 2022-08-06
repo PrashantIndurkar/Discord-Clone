@@ -4,10 +4,12 @@ import { MdExplore } from "react-icons/md";
 import { AiOutlinePlus } from "react-icons/ai";
 import { HiOutlineDownload } from "react-icons/hi";
 import reactServer from "../../assets/images/servers/reactServer.webp";
+import nextServer from "../../assets/images/servers/nextjs.webp";
+import tailwindCssServer from "../../assets/images/servers/tailwindcss.webp";
 
-const ServerIcons = () => {
+const Sidebar = () => {
   return (
-    <nav className="bg-gray-700 min-h-screen h-screen">
+    <nav className="bg-[#202225] min-h-screen h-screen">
       <ul className="text-center flex flex-col items-center py-2 h-full space-y-2">
         <li>
           <a href="">
@@ -31,7 +33,7 @@ const ServerIcons = () => {
         <li>
           <a href="">
             <img
-              src={reactServer}
+              src={nextServer}
               className="h-12 w-12 rounded-full hover:rounded-xl transition-all duration-200"
               alt=""
             />
@@ -40,7 +42,7 @@ const ServerIcons = () => {
         <li>
           <a href="">
             <img
-              src={reactServer}
+              src={tailwindCssServer}
               className="h-12 w-12 rounded-full hover:rounded-xl transition-all duration-200"
               alt=""
             />
@@ -68,4 +70,4 @@ const ServerIcons = () => {
   );
 };
 
-export default ServerIcons;
+export default Sidebar;
