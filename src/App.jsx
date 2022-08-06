@@ -6,7 +6,8 @@ import Footer from "./Components/LandingPage/Footer";
 import Login from "./Components/LoginPage/Login";
 
 import { Routes, Route } from "react-router-dom";
-import Channel from "./Components/Channel/Channels";
+import Channel from "./Components/Channel/Channel";
+import Layout from "./Components/Layout";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="login" element={<Login />}></Route>
         <Route path="channel" element={<Channel />}></Route>
       </Routes>
+      {/* <Layout /> */}
     </>
   );
 }
