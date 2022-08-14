@@ -15,7 +15,7 @@ import { AiFillPushpin, AiOutlineGif } from "react-icons/ai";
 import { MdPeopleAlt } from "react-icons/md";
 import { FaGift } from "react-icons/fa";
 import Sidebar from "./Sidebar";
-import ServerChannels from "./ServerChannels";
+import CreateChannel from "./CreateChannel";
 import { BsFillFileEarmarkFill, BsFillEmojiLaughingFill } from "react-icons/bs";
 
 const Channel = () => {
@@ -61,7 +61,7 @@ const Channel = () => {
         <div className="flex-1 flex overflow-y-hidden">
           <div className="bg-[#2f3136] 300 w-56 flex-none flex flex-col justify-between">
             <div className="scrollbar-hide">
-              <ServerChannels />
+              <CreateChannel />
             </div>
             {/* Profile Setting */}
             <div class="bg-[#292b2f] h-12 text-white"></div>

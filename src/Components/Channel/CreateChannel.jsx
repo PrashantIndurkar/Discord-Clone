@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { ChevronDownIcon, PlusCircleIcon } from "@heroicons/react/outline";
+import { ChevronDownIcon, PlusIcon } from "@heroicons/react/outline";
 import Modal from "../../util/Modal";
 
-const ServerChannels = () => {
+const CreateChannel = () => {
   const [showModel, setShowModel] = useState(false);
   const handelClose = () => setShowModel(false);
   return (
@@ -15,9 +15,9 @@ const ServerChannels = () => {
           </span>
           <div className="flex items-center">
             <span>Create Channels</span>
-            <PlusCircleIcon
+            <PlusIcon
               onClick={() => setShowModel(true)}
-              className="h-5 w-5 ml-2 cursor-pointer"
+              className="h-5 w-5 ml-4 cursor-pointer"
             />
           </div>
         </div>
@@ -46,4 +46,4 @@ const ServerChannels = () => {
   );
 };
 
-export default ServerChannels;
+export default CreateChannel;
