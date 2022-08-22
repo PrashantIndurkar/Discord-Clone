@@ -205,7 +205,8 @@ const Channels = () => {
             {/* CHAT SECTION */}
             <div className="flex-1 flex justify-between">
               <div className="bg-[#36393f] flex-1 flex flex-col justify-between">
-                <div className=" overflow-y-auto w-full px-4 scrollbar-hide">
+                {/* chat */}
+                <div className="h-full overflow-y-auto w-full px-4 scrollbar-hide">
                   {messages?.docs.map((doc) => {
                     const { message, timestamp, name, photoURL, email } =
                       doc.data();
@@ -223,18 +224,19 @@ const Channels = () => {
                     );
                   })}
 
-                  <div ref={chatRef} className="pb-16"></div>
+                  <div ref={chatRef} className="pb-24"></div>
                 </div>
-                <div className="mx-4 my-5">
-                  <div className="flex items-center bg-[#40444b] justify-between rounded-md p-2">
+                {/* input */}
+                <div className="mx-4 pb-6 overflow-hidden z-10">
+                  <div className="flex items-center bg-[#40444b] z-50 shadow-lg justify-between rounded-md p-2">
                     <div className="flex items-center">
                       <button className="mx-2 ">
                         <PlusCircleIcon className=" h-7 w-7 text-[#b9bbbe]" />
                       </button>
-                      <form>
+                      <form className="flex flex-1 justify-end  w-screen">
                         <input
                           type="text"
-                          className="flex-1 bg-inherit  outline-none text-white"
+                          className="flex-1 bg-inherit outline-none text-white"
                           placeholder={
                             channelId
                               ? `Message #${channelName}`
@@ -248,7 +250,7 @@ const Channels = () => {
                         </button>
                       </form>
                     </div>
-                    <div className="space-x-5 mr-6 ">
+                    <div className="space-x-5 w-1/4 flex">
                       <button>
                         <FaGift className="h-5 w-5 text-[#b9bbbe]" />
                       </button>
@@ -264,7 +266,7 @@ const Channels = () => {
               </div>
 
               <div className="bg-[#2f3136] w-60 flex-none overflow-y-auto">
-                <h1 className="text-gray-200 mx-3 mt-4">Members</h1>
+                <h1 className="text-gray-200 mx-3 mt-4">Online Members</h1>
                 <div className="flex flex-nowrap gap-x-2 items-center  mx-3 px-2  mt-4 py-1 cursor-pointer hover:bg-[#40444b] hover:rounded-md ">
                   <img
                     src={user?.photoURL}

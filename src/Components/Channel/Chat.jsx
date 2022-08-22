@@ -14,7 +14,7 @@ const Chat = ({ id, message, name, timestamp, photoURL, email }) => {
   const channelId = useSelector(selectChannelId);
 
   return (
-    <div className="border-b border-discord_button_bg mt-3 ">
+    <div className="border-b border-discord_button_bg pt-4 ">
       <div className="flex hover:bg-discord_button_bg p-2 rounded-lg group">
         <img
           src={photoURL}
@@ -27,7 +27,7 @@ const Chat = ({ id, message, name, timestamp, photoURL, email }) => {
               {moment(timestamp?.toDate().getTime()).format("lll")}
             </p>
           </div>
-          <p className="text-gray-300">{message}</p>
+          <p className="text-gray-300 mt-2">{message}</p>
         </div>
         {user?.email === email && (
           <button className="overflow-hidden flex items-center justify-center w-12 h-10 mr-6">
