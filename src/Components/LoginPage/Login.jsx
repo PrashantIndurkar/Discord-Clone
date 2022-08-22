@@ -1,6 +1,18 @@
 import React from "react";
+import { auth, provider } from "../../firebase";
+import { useNavigate } from "react-router-dom";
+import { useAuthState } from "react-firebase-hooks/auth";
 
 const Login = () => {
+  const [user] = useAuthState(auth);
+  let navigate = useNavigate();
+  const signIn = (e) => {
+    e.preventDefault();
+    auth
+      .signInWithPopup(provider)
+      .then(() => navigate("/channels"))
+      .catch((error) => alert(error.message));
+  };
   return (
     <header className="bg-discord_blue text-white h-[100vh] flex justify-center items-center ">
       <div className="bg-[#36393f]  p-10 flex rounded-lg space-x-8">
@@ -52,7 +64,10 @@ const Login = () => {
           <h1 className="text-3xl overflow-hidden text-center  font-semibold">
             Quick Login using
           </h1>
-          <button className="bg-red-600 font-semibold px-5 py-2 mt-4 rounded-sm">
+          <button
+            className="bg-red-600 font-semibold px-5 py-2 mt-4 rounded-sm"
+            onClick={!user ? signIn : () => navigate("/channels")}
+          >
             Google
           </button>
           <p className="text-xs w-60 mt-4 overflow-hidden text-center">

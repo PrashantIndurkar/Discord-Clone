@@ -4,7 +4,14 @@ import { MenuIcon } from "@heroicons/react/outline";
 import logo from "../../assets/images/Discord-Logo.svg";
 import { Link } from "react-router-dom";
 
+import { auth, provider } from "../../firebase";
+import { useNavigate } from "react-router-dom";
+import { useAuthState } from "react-firebase-hooks/auth";
+
 function Nav() {
+  const [user] = useAuthState(auth);
+  let navigate = useNavigate();
+
   return (
     <div className=" bg-discord_blue">
       <div className="flex items-center justify-between  h-[10vh] mx-6 md:mx-10">
@@ -21,7 +28,12 @@ function Nav() {
         </div>
         <div className="flex items-center space-x-4">
           <button className="bg-white rounded-full py-2 px-6 focus:outline-none text-base text-zinc-700 hover:text-discord_blurple hover:shadow-xl transition duration-150">
-            <Link to="Login">Login</Link>
+            <Link
+              to={!user ? "login" : "channels"}
+              onClick={() => navigate("/channels")}
+            >
+              {!user ? "Login" : "Open Discord"}
+            </Link>
           </button>
           <MenuIcon className="h-8 text-white" />
         </div>

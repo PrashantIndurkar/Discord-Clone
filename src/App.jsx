@@ -6,8 +6,7 @@ import Footer from "./Components/LandingPage/Footer";
 import Login from "./Components/LoginPage/Login";
 
 import { Routes, Route } from "react-router-dom";
-import Channel from "./Components/Channel/Channel";
-import Layout from "./Components/Layout";
+import Channels from "./Components/Channel/Channels";
 
 function App() {
   return (
@@ -25,7 +24,8 @@ function App() {
           }
         ></Route>
         <Route path="login" element={<Login />}></Route>
-        <Route path="channel" element={<Channel />}></Route>
+        <Route path="channels" element={<Channels />}></Route>
+        <Route path="channels/:id" element={<Channels />}></Route>
       </Routes>
       {/* <Layout /> */}
     </>

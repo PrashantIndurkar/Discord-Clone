@@ -24,7 +24,7 @@ function Header() {
             <DownloadIcon className="h-5 w-5" /> <a href="">Download</a>
           </button>
           <button className="hero_button text-white bg-black">
-            <Link to="/channel">Open Discord in your browser</Link>
+            <Link to="/channels">Open Discord in your browser</Link>
           </button>
         </div>
       </div>
