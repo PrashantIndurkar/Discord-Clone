@@ -266,7 +266,7 @@ const Channels = () => {
               </div>
 
               <div className="bg-[#2f3136] w-60 flex-none overflow-y-auto">
-                <h1 className="text-gray-200 mx-3 mt-4">Online Members</h1>
+                <h1 className="text-gray-200 mx-3 mt-4">Online Members </h1>
                 <div className="flex flex-nowrap gap-x-2 items-center  mx-3 px-2  mt-4 py-1 cursor-pointer hover:bg-[#40444b] hover:rounded-md ">
                   <img
                     src={user?.photoURL}
